@@ -13,7 +13,8 @@ RUN apt-get update && apt-get -y install \
         libssl-dev \
         libncurses5-dev \
         fakeroot \
-        git
+        git \
+        zip
 
 WORKDIR /src
 
