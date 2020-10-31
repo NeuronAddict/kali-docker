@@ -18,7 +18,7 @@ $ git clone <your kernel>
 ## run into env
 
 ```
-$ docker-compose run kali-kernel-build
+$ docker-compose run nethunter-kernel-build
 /src# make help # RTFM !
 /src# make menuconfig
 ...
