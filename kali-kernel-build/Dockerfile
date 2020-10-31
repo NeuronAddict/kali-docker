@@ -9,11 +9,13 @@ ENV CROSS_COMPILE=/toolchain64/bin/aarch64-linux-android-
 
 RUN apt-get update && apt-get -y install \
         build-essential \
+        clang \
         libelf-dev \
         libssl-dev \
         libncurses5-dev \
         fakeroot \
         git \
+        python \
         zip
 
 WORKDIR /src
