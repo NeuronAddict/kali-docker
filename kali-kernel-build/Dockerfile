@@ -7,6 +7,10 @@ ENV ARCH=arm64
 ENV SUBARCH=arm64
 ENV CROSS_COMPILE=/toolchain64/bin/aarch64-linux-android-
 
+ENV CFLAGS="-Wno-error"
+ENV CCFLAGS="-Wno-error"
+ENV CXXFLAGS="-Wno-error"
+
 RUN apt-get update && apt-get -y install \
         build-essential \
         clang \
