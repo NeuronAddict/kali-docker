@@ -12,6 +12,7 @@ ENV CCFLAGS="-Wno-error"
 ENV CXXFLAGS="-Wno-error"
 
 RUN apt-get update && apt-get -y install \
+	bc \
         build-essential \
         clang \
         libelf-dev \
