@@ -25,4 +25,4 @@ RUN apt-get update && apt-get -y install \
 
 WORKDIR /src
 
-RUN git clone $TOOLCHAIN_REPO -b $TOOLCHAIN_BRANCH /toolchain64
+RUN git clone $TOOLCHAIN_REPO --single-branch -b $TOOLCHAIN_BRANCH /toolchain64
