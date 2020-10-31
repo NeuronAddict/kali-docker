@@ -13,15 +13,16 @@ ENV CXXFLAGS="-Wno-error"
 
 RUN apt-get update && apt-get -y install \
 	bc \
-        build-essential \
-        clang \
-        libelf-dev \
-        libssl-dev \
-        libncurses5-dev \
-        fakeroot \
-        git \
-        python \
-        zip
+    build-essential \
+    clang \
+    curl \
+    libelf-dev \
+    libssl-dev \
+    libncurses5-dev \
+    fakeroot \
+    git \
+    python \
+    zip
 
 WORKDIR /src
 
