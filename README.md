@@ -34,9 +34,9 @@ $ docker-compose run nethunter-kernel-build
 kali-docker/src$ git clone https://github.com/LineageOS/android_kernel_lge_bullhead.git --single-branch -b lineage-15.0
 $ cd ..
 $ nano docker-compose
-# in enviroment section : 
-# MAKE_CONFIG=lineageos_bullhead_defconfig # default config passed to make
-# SRC_SUBDIR=lineage-15.0 # subdir in src where are your kernel sources
+$ # in enviroment section : 
+$ # MAKE_CONFIG=lineageos_bullhead_defconfig # default config passed to make
+$ # SRC_SUBDIR=lineage-15.0 # subdir in src where are your kernel sources
 $ docker-compose build
 $ docker-compose run nethunter-kernel-build
 ```
