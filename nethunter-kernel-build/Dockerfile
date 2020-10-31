@@ -26,3 +26,5 @@ RUN apt-get update && apt-get -y install \
 WORKDIR /src
 
 RUN git clone $TOOLCHAIN_REPO --single-branch -b $TOOLCHAIN_BRANCH /toolchain64
+
+CMD ["sh", "-c",  "cd $SRC_SUBDIR && make $MAKE_CONFIG && make menuconfig && make -j4"]

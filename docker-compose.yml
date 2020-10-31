@@ -8,7 +8,9 @@ services:
         - TOOLCHAIN_BRANCH=oreo-release
         - TOOLCHAIN_REPO=https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
     tty: true
+    environment:
+      - MAKE_CONFIG=lineageos_bullhead_defconfig
+      - SRC_SUBDIR=lineage-15.0
     stdin_open: true
     volumes:
     - ./src:/src
-    command: /bin/bash
