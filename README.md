@@ -1,5 +1,14 @@
 # Docker for build kali kernel
 
+## build container
+
+```
+$ git clone https://github.com/NeuronAddict/kali-docker.git
+$ cd kali-docker
+$ # edit TOOLCHAIN_BRANCH and TOOLCHAIN_REPO on docker-compose.yml
+$ docker-compose build
+```
+
 ## get sources
 
 ```
@@ -11,15 +20,9 @@ $ git clone <your kernel>
 
 Change env vars in docker-compose or when you launch container :
 
+```
 MAKE_CONFIG=lineageos_bullhead_defconfig # default config passed to make
 SRC_SUBDIR=lineage-15.0 # subdir in src where are your kernel sources
-
-## build container
-
-```
-$ git clone https://github.com/NeuronAddict/kali-docker.git
-$ cd kali-docker
-$ docker-compose build
 ```
 
 ## run into env
