@@ -11,6 +11,7 @@ services:
     environment:
       - MAKE_CONFIG=nethunter_defconfig
       - SRC_SUBDIR=nethunter-8.1
+      - EXTRAVERSION=nethunter-custom-01
     stdin_open: true
     volumes:
     - ./src:/src
