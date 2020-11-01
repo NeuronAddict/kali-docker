@@ -14,3 +14,10 @@ services:
     stdin_open: true
     volumes:
     - ./src:/src
+  nethunter-image-build:
+    build:
+      context: nethunter-image-build
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./src:/src
