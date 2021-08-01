@@ -12,6 +12,7 @@ ENV CCFLAGS="-Wno-error"
 ENV CXXFLAGS="-Wno-error"
 
 RUN apt-get update && apt-get -y install \
+    axel \
 	bc \
     build-essential \
     clang \
@@ -22,6 +23,7 @@ RUN apt-get update && apt-get -y install \
     fakeroot \
     git \
     python \
+    sudo \
     zip
 
 WORKDIR /src
