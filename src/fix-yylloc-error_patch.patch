@@ -1,0 +1,32 @@
+Index: android_kernel_lge_bullhead/scripts/dtc/dtc-lexer.lex.c_shipped
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- android_kernel_lge_bullhead/scripts/dtc/dtc-lexer.lex.c_shipped	(revision bb444cc45bd3663e0a37716996605fa04c2f00d0)
++++ android_kernel_lge_bullhead/scripts/dtc/dtc-lexer.lex.c_shipped	(date 1604185197030)
+@@ -637,7 +637,7 @@
+ #include "srcpos.h"
+ #include "dtc-parser.tab.h"
+ 
+-YYLTYPE yylloc;
++extern YYLTYPE yylloc;
+ 
+ /* CAUTION: this will stop working if we ever use yyless() or yyunput() */
+ #define	YY_USER_ACTION \
+Index: android_kernel_lge_bullhead/scripts/dtc/dtc-lexer.l
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- android_kernel_lge_bullhead/scripts/dtc/dtc-lexer.l	(revision bb444cc45bd3663e0a37716996605fa04c2f00d0)
++++ android_kernel_lge_bullhead/scripts/dtc/dtc-lexer.l	(date 1604185196994)
+@@ -39,7 +39,7 @@
+ #include "srcpos.h"
+ #include "dtc-parser.tab.h"
+ 
+-YYLTYPE yylloc;
++//YYLTYPE yylloc;
+ 
+ /* CAUTION: this will stop working if we ever use yyless() or yyunput() */
+ #define	YY_USER_ACTION \
